@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Banner.module.css'
 import useMatchMedia from '../hooks/useMatchMedia';
 
-const Banner = ({ name, desc, img, title, button, nutritionalTable, flexStart, tambem }) => {
+const Banner = ({ name, desc, img, title, button, nutritionalTable, flexStart }) => {
   
   const mobile = useMatchMedia("(max-width: 1025px");
   
