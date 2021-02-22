@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from '../styles/Banner.module.css'
-import useMouseEffect from '../hooks/useMouseEffect';
 import useMatchMedia from '../hooks/useMatchMedia';
 
-const Banner = ({ name, desc, img, title, button, nutritionalTable, flexStart }) => {
+const Banner = ({ name, desc, img, title, button, nutritionalTable, flexStart, tambem }) => {
   
   const mobile = useMatchMedia("(max-width: 1025px");
   
