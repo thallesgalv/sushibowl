@@ -1,0 +1,229 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.main {
+  padding-top: calc(5rem + 2.34375rem);
+  padding-bottom: 2.34375rem;
+  min-height: calc(100vh - 5rem);
+}
+
+.main > .title {
+  color: #C06376;
+  text-align: center;
+  font-size: clamp(2.53125rem, 4vw, 3.9375rem);
+}
+
+.main > section.containerPratos {
+  -webkit-animation: fade .5s forwards;
+          animation: fade .5s forwards;
+}
+
+.main > section.containerPratos > .containerSearchBar,
+.main > section.containerPratos > .containerButtonFilter {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.875rem auto;
+}
+
+.main > section.containerPratos > .containerSearchBar > button + button,
+.main > section.containerPratos > .containerButtonFilter > button + button {
+  margin-left: 1.875rem;
+}
+
+@media (max-width: 768px) {
+  .main > section.containerPratos > .containerSearchBar,
+  .main > section.containerPratos > .containerButtonFilter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main > section.containerPratos > .containerSearchBar > button + button,
+  .main > section.containerPratos > .containerButtonFilter > button + button {
+    margin-top: 0.9375rem;
+    margin-left: unset;
+  }
+}
+
+.main > section.containerPratos > section.grid {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  gap: 1.875rem;
+}
+
+.main > section.containerPratos > section.grid > .gridItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.main > section.containerPratos > section.grid > .gridItem > p.name {
+  color: #C06376;
+  font-size: 1.2375rem;
+  font-weight: 300;
+  width: 60%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main > section.containerPratos > section.grid > .gridItem > p.name {
+    width: 100%;
+  }
+}
+
+.main > section.accordion {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.875rem 0;
+}
+
+.main > form {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+  max-width: 43.75rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 0.625rem;
+  -webkit-animation: fade .5s forwards;
+          animation: fade .5s forwards;
+}
+
+@media (max-width: 767px) {
+  .main > form {
+    max-width: unset;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.main > form > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FF6700;
+  font-weight: 500;
+  width: 100%;
+}
+
+.main > form > label > input, .main > form > label textarea {
+  border: 1px solid #F88A3F;
+  padding: 0.9375rem;
+  margin: 0.46875rem 0;
+  outline: none;
+  border-radius: 0.9375rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main > form > label > textarea {
+  resize: none;
+  padding-right: 30px;
+}
+
+.main > form label[for="nome"],
+.main > form label[for="email"],
+.main > form label[for="mensagem"],
+.main > form button[type="submit"] {
+  grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+  .main > form label[for="nome"],
+  .main > form label[for="email"],
+  .main > form label[for="mensagem"],
+  .main > form button[type="submit"] {
+    grid-column: unset;
+  }
+}
+/*# sourceMappingURL=Internas.module.css.map */

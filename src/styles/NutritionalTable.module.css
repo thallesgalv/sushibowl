@@ -1,0 +1,129 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table > h2 {
+  font-size: 1.125rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FF6700;
+  font-weight: 500;
+  text-align: center;
+}
+
+.table > .infos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3.75rem)[4];
+      grid-template-columns: repeat(4, 3.75rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  gap: 1.875rem;
+  row-gap: 0.3125rem;
+  margin: 0.625rem 0;
+}
+
+.table > .infos > .item {
+  width: 100%;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: 1px solid #FF6700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table > .infos > .item > .num {
+  display: block;
+  color: #FF6700;
+  font-size: 0.9rem;
+}
+
+.table > .infos > p {
+  color: #FF6700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.table > .ingredients {
+  color: #C06376;
+  width: 100%;
+  max-width: 20.625rem;
+}
+/*# sourceMappingURL=NutritionalTable.module.css.map */

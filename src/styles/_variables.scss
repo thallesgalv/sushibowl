@@ -1,0 +1,47 @@
+$primary: #FF6700;
+$primaryLight: #F88A3F;
+$secondary: #C06376;
+$colorText: #707070;
+$offWhite: #FFFCFC;
+
+$menuHeight: 5rem; //80px
+$footerHeight: 5rem; //48px
+
+$fontSize: 18;
+$lineHeight: 1.5em;
+$spacing: 30;
+$radius: 15;
+
+
+@function rem ($medida) {
+  $converte: $medida / 1.6 /10;
+  @return #{$converte}rem;
+}
+
+@mixin align {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+@keyframes fade{
+  from {
+    transform: translate3d(0,100px,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes show{
+  from {
+    transform: translate3d(500px,0,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}

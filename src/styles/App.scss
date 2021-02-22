@@ -1,0 +1,20 @@
+@import "../styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  p {
+    line-height: $lineHeight;
+    color: $colorText;
+  }
+
+  main {
+    min-height: calc(100vh - #{$menuHeight + $footerHeight});
+    padding-top: $menuHeight;
+  
+    @media (max-width: 767px) {
+      padding: rem($spacing) 0;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "../styles/variables";
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(300px,1fr) minmax(450px,1fr) minmax(300px,400px) ;
+  justify-content: center;
+  place-items: center;
+  gap: rem($spacing /2);
+  padding: 0 rem($spacing);
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    
+  }
+
+  >.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    >.route {
+      text-transform: uppercase;
+      color: $colorText;
+      font-weight: 300;
+      font-size: rem($spacing/1.5); 
+      margin-bottom: rem($spacing/2);
+
+      @media (max-width: 767px) {
+        font-size: rem($fontSize); 
+      }
+    }
+
+    >.containerTitle {
+      height: 100%;
+    }
+
+    >.description {
+      color: $secondary;
+      font-weight: 300;
+      font-size: rem($fontSize * 1.25);
+      width: 100%;
+      max-width: 400px;
+      margin-top: rem($spacing);
+      margin-bottom: rem($spacing * 1.5);
+      margin-left: rem($spacing);
+
+      @media (max-width: 767px) {
+        margin: rem($spacing/2) 0;
+        font-size: rem($fontSize);
+        text-align: center;
+      }
+    }
+  }
+
+  >.img {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+  }
+
+
+  .containerTable {
+    align-self: flex-end;
+    margin-bottom: rem(100);
+
+    @media (max-width: 1100px) {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 767px) {
+     display: none;
+    }
+  }
+}

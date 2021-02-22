@@ -1,0 +1,125 @@
+@import "../styles/variables";
+
+.main {
+  padding-top: calc(#{$menuHeight} + #{rem($spacing * 1.25)});
+  padding-bottom: rem($spacing * 1.25);
+  min-height: calc(100vh - #{$footerHeight});
+
+  >.title {
+    color: $secondary;
+    text-align: center;
+    font-size: clamp(rem($fontSize*2.25), 4vw, rem($fontSize*3.5));
+  }
+
+  >section.containerPratos {
+    animation: fade .5s forwards;
+                  
+
+    >.containerSearchBar,
+    >.containerButtonFilter {
+      @include align;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: rem($spacing) auto;
+      
+      >button + button {
+        margin-left: rem($spacing);
+      }
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+  
+        >button + button {
+          margin-top: rem($spacing /2);
+          margin-left: unset;
+        }
+      }
+    }
+  
+    >section.grid {
+      @include align;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      justify-content: center;
+      place-items: center;
+      gap: rem($spacing);
+  
+      >.gridItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+  
+        >p.name {
+          color: $secondary;
+          font-size: rem($fontSize*1.1);
+          font-weight: 300;
+          width: 60%;
+          text-align: center;
+  
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  >section.accordion {
+    @include align;
+    padding: rem($spacing) 0;
+  }
+
+  >form {
+    @include align;
+    max-width: rem(700);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    align-items: end;
+    gap: rem($spacing / 3);
+    animation: fade .5s forwards;
+
+    @media (max-width: 767px) {
+      max-width: unset;
+      grid-template-columns: 1fr;
+    }
+
+    >label {
+      display: flex;
+      flex-direction: column;
+      color: $primary;
+      font-weight: 500;
+      width: 100%;
+
+      >input, textarea {
+        border: 1px solid $primaryLight;
+        padding: rem($spacing / 2);
+        margin: rem($spacing /4) 0;
+        outline: none;
+        border-radius: rem($radius);
+        font-family: 'Poppins', sans-serif;
+
+      }
+
+      >textarea{
+        resize: none;
+        padding-right: 30px;        
+      }
+    }
+
+    label[for="nome"],
+    label[for="email"],
+    label[for="mensagem"],
+    button[type="submit"] {
+       grid-column: span 3;
+
+       @media (max-width: 767px) {
+        grid-column: unset;
+       }
+    }
+  }
+}

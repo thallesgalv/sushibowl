@@ -1,0 +1,31 @@
+@import "../styles/variables";
+
+.accordionItem {
+  width: 100%;
+ 
+
+  >.question {
+    background-color: $primaryLight;
+    color: #fff;
+    font-size: clamp(rem($fontSize),4vw,rem($fontSize * 1.25));
+    padding: rem($spacing / 2);
+    border-radius: rem($radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    animation: fade .5s forwards;
+
+    @media (max-width: 767px) {
+      padding: rem($spacing / 2);
+    }
+  }
+
+  >.answer {
+    width: 100%;
+    padding: rem($spacing / 1.75);
+    color: $colorText;
+    font-size: rem($fontSize);
+    line-height: $lineHeight;
+  }
+}

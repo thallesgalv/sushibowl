@@ -1,0 +1,23 @@
+@import "../styles/variables";
+
+.footer {
+  height: $footerHeight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorText;
+  box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+
+  @media (max-width: 767px) {
+    height: unset;
+  }
+
+  .galv {
+    width: fit-content;
+    height: fit-content;
+    max-width: 80px;
+    position: relative;
+    top: -10px;
+    left: 10px;
+  }
+}

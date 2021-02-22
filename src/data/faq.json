@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Como surgiu o Poke?",
+    "resposta": "A origem do prato está nos pescadores no Havaí, que serviam aparas temperadas de peixes como aperitivo para seus clientes. O poke (pronuncia-se 'poquê' e, no idioma nativo havaiano, significa 'cortar em pedaços') teve sua primeira grande onda de sucesso nos anos 1970."
+  },
+  {
+    "id": 2,
+    "pergunta": "Quais os benefícios do salmão?",
+    "resposta": "Rico em ômega 3, alta quantidade de vitamina B, rico em vitamina D, importante fonte de proteína e  ainda possui boa quantidade de potássio"
+  },
+  {
+    "id": 3,
+    "pergunta": "Onde encontro os produtos Sushi Bowl?",
+    "resposta": "Nas lojas conveniadas sediadas em Santos/SP. Na página produtos é possível verificar onde cada produto pode ser encontrado."
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual é a origem dos peixes comercializados pela Sushi Bowl",
+    "resposta": "Todos os peixes são cultivados na granja do Seu Pedro, em Ribeirão Pires (SP). Trata-se de uma produção artesanal, sem a utilização de rações industrializadas e antibióticos."
+  },
+  {
+    "id": 5,
+    "pergunta": "De onde surgiu o Sushi Bowl?",
+    "resposta": "Na verdade, a marca Sushi Bowl não existe. Trata-se apenas de um tema escolhido para treinamento de desenvolvimento em ReactJS."
+  }
+]

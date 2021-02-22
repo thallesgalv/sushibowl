@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+.button,
+.buttonAlt,
+.buttonAltActive {
+  background-color: $primaryLight;
+  padding: rem($spacing / 2) rem($spacing * 1.5);
+  color: #fff;
+  border-radius: rem($radius);
+  text-transform: uppercase;
+  font-size: rem($fontSize *1.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonAlt,
+.buttonAltActive {
+  background-color: #fff;
+  color: $secondary;
+  border: 1px solid $secondary;
+  font-size: rem($fontSize);
+}
+
+.buttonAltActive {
+  background-color: $secondary;
+  color: #fff;
+}

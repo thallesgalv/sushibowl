@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Home",
+    "title": null,
+    "path": "/"
+  },
+  {
+    "nome": "Pratos",
+    "title": "Pratos",
+    "path": "/pratos"
+  },
+  {
+    "nome": "FAQ",
+    "title": "FAQ",
+    "path": "/faq"
+  },
+  {
+    "nome": "Fale conosco",
+    "title": "Fale conosco",
+    "path": "fale-conosco"
+  }
+]

@@ -1,0 +1,146 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translate3d(500px, 0, 0);
+            transform: translate3d(500px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal > .card {
+  width: 40%;
+  background-color: #fff;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+          box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  padding: 3.75rem;
+}
+
+@media (max-width: 767px) {
+  .modal > .card {
+    width: 80%;
+    padding: 1.875rem;
+  }
+}
+
+.modal > .card > .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 0.9375rem;
+}
+
+@media (max-width: 767px) {
+  .modal > .card > .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.modal > .card > .container > .infos > .cat,
+.modal > .card > .container > .infos > .name,
+.modal > .card > .container > .infos > .description {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .modal > .card > .container > .infos > .cat,
+  .modal > .card > .container > .infos > .name,
+  .modal > .card > .container > .infos > .description {
+    text-align: center;
+  }
+}
+
+.modal > .card > .container > .infos .name {
+  font-size: clamp(1.6875rem, 4vh, 2.25rem);
+  color: #C06376;
+  text-transform: capitalize;
+  margin: 1.07143rem 0;
+}
+
+@media (max-width: 767px) {
+  .modal > .card > .container > .infos .name {
+    margin: 0.9375rem 0;
+  }
+}
+
+.modal > .card > .container > .infos > .description {
+  text-transform: unset;
+}
+
+.modal > .card > .container > .infos > .description > strong {
+  color: #C06376;
+  font-weight: 600;
+}
+
+.modal > .card > .container > .infos > .description + .description {
+  margin-top: 0.9375rem;
+}
+/*# sourceMappingURL=Modal.module.css.map */

@@ -1,0 +1,78 @@
+@import "../styles/variables";
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >.card {
+    width: 40%;
+    background-color: #fff;
+    border-radius: rem($radius);
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+    padding: rem($spacing * 2);
+
+    @media (max-width: 767px) {
+      width: 80%;
+      padding: rem($spacing);
+    }
+
+    >.container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      gap: rem($spacing/2);
+
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
+
+      
+      >.infos {
+        >.cat,
+        >.name,
+        >.description {
+          font-size: rem($fontSize);
+          text-transform: uppercase;
+          text-align: right;
+          font-weight: 300;
+
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+        }
+
+        .name {
+          font-size: clamp( rem($fontSize * 1.5),4vh, rem($fontSize * 2));
+          color: $secondary;
+          text-transform: capitalize;
+          margin: rem($spacing / 1.75) 0;
+
+          @media (max-width: 767px) {
+            margin: rem($spacing / 2) 0;
+          }
+        }
+
+        >.description {
+          text-transform: unset;
+
+          >strong {
+            color: $secondary;
+            font-weight: 600;
+          }
+
+          +.description {
+            margin-top: rem($spacing / 2);
+          }
+        }
+      }
+    }
+  }
+}

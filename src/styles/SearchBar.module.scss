@@ -1,0 +1,22 @@
+@import "../styles/variables";
+
+.input {
+  border-radius: rem($radius);
+  height: rem($spacing*1.5);
+  border: 1px solid $secondary;
+  width: 60%;
+  outline: none;
+  padding-left:  rem($spacing);
+  font-size: rem($fontSize);
+  color: $colorText;
+  
+  @media (max-width: 767px) {
+    width: 100%;
+    font-size: rem($fontSize / 1.5);
+  }
+
+  &::placeholder {
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+  }
+}
