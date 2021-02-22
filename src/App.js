@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Footer from './components/Footer'
@@ -11,7 +11,7 @@ import FaleConosco from './pages/FaleConosco'
 const App = () => {
  
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Header />
       
       <Routes>
@@ -22,7 +22,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
