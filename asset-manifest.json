@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sushibowl/static/css/main.2af370c4.chunk.css",
-    "main.js": "/sushibowl/static/js/main.8a3f5d6b.chunk.js",
-    "main.js.map": "/sushibowl/static/js/main.8a3f5d6b.chunk.js.map",
+    "main.js": "/sushibowl/static/js/main.8e146b55.chunk.js",
+    "main.js.map": "/sushibowl/static/js/main.8e146b55.chunk.js.map",
     "runtime-main.js": "/sushibowl/static/js/runtime-main.ad814c90.js",
     "runtime-main.js.map": "/sushibowl/static/js/runtime-main.ad814c90.js.map",
     "static/js/2.fb29e88b.chunk.js": "/sushibowl/static/js/2.fb29e88b.chunk.js",
@@ -14,7 +14,7 @@
     "static/media/bannerPokeSalmao.16250a1b.png": "/sushibowl/static/media/bannerPokeSalmao.16250a1b.png",
     "static/media/bannerPokeVegano.daa6d897.png": "/sushibowl/static/media/bannerPokeVegano.daa6d897.png",
     "static/media/bannerRoll.60d89d68.png": "/sushibowl/static/media/bannerRoll.60d89d68.png",
-    "static/media/galvViceBlue.547d952b.svg": "/sushibowl/static/media/galvViceBlue.547d952b.svg",
+    "static/media/galvViceBlue.bf575abd.svg": "/sushibowl/static/media/galvViceBlue.bf575abd.svg",
     "static/media/highlightForm.bdc04075.svg": "/sushibowl/static/media/highlightForm.bdc04075.svg",
     "static/media/hossomakiAtum.png": "/sushibowl/static/media/hossomakiAtum.3f7a06a8.png",
     "static/media/hossomakiSalmao.png": "/sushibowl/static/media/hossomakiSalmao.69125b87.png",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.ad814c90.js",
     "static/js/2.fb29e88b.chunk.js",
     "static/css/main.2af370c4.chunk.css",
-    "static/js/main.8a3f5d6b.chunk.js"
+    "static/js/main.8e146b55.chunk.js"
   ]
 }
