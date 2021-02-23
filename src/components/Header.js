@@ -31,7 +31,7 @@ const Header = () => {
     )
 
 
-    if (mobile) menuMobile(false)
+    if (mobile || menuMobile) setMenuMobile(true)
   }
 
   return (
@@ -49,7 +49,7 @@ const Header = () => {
           :
             `${styles.containerLinks}`}
         >
-          {Menu.map((item, index) =>
+          {Menu.map(item =>
             <li key={item.path}><NavLink to={item.path} onClick={handleClick}  >{item.nome}</NavLink></li>)}
         </ul>
 

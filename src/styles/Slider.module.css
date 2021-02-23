@@ -60,6 +60,12 @@
           animation: fade 0.5s forwards;
 }
 
+@media (max-width: 767px) {
+  .slider {
+    padding-top: 3.75rem;
+  }
+}
+
 .slider > .container {
   width: 100%;
   height: 100%;

@@ -9,9 +9,9 @@ import Faq from './pages/Faq'
 import FaleConosco from './pages/FaleConosco'
 
 const App = () => {
- 
+  // basename='/'
   return (
-    <HashRouter basename='/'>
+    <HashRouter basename="/" >
       <Header />
       
       <Routes>
