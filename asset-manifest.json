@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sushibowl/static/css/main.24997609.chunk.css",
+    "main.css": "/sushibowl/static/css/main.478c11d1.chunk.css",
     "main.js": "/sushibowl/static/js/main.8e146b55.chunk.js",
     "main.js.map": "/sushibowl/static/js/main.8e146b55.chunk.js.map",
     "runtime-main.js": "/sushibowl/static/js/runtime-main.ad814c90.js",
@@ -8,7 +8,7 @@
     "static/js/2.fb29e88b.chunk.js": "/sushibowl/static/js/2.fb29e88b.chunk.js",
     "static/js/2.fb29e88b.chunk.js.map": "/sushibowl/static/js/2.fb29e88b.chunk.js.map",
     "index.html": "/sushibowl/index.html",
-    "static/css/main.24997609.chunk.css.map": "/sushibowl/static/css/main.24997609.chunk.css.map",
+    "static/css/main.478c11d1.chunk.css.map": "/sushibowl/static/css/main.478c11d1.chunk.css.map",
     "static/js/2.fb29e88b.chunk.js.LICENSE.txt": "/sushibowl/static/js/2.fb29e88b.chunk.js.LICENSE.txt",
     "static/media/bannerNigiri.0e36e77e.png": "/sushibowl/static/media/bannerNigiri.0e36e77e.png",
     "static/media/bannerPokeSalmao.16250a1b.png": "/sushibowl/static/media/bannerPokeSalmao.16250a1b.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.ad814c90.js",
     "static/js/2.fb29e88b.chunk.js",
-    "static/css/main.24997609.chunk.css",
+    "static/css/main.478c11d1.chunk.css",
     "static/js/main.8e146b55.chunk.js"
   ]
 }
